@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		  <h1> Cadastro </h1> 
+	</header>
+
+	<main>
+	      
+	      <form>
+          
+          <!--Dados Pessoai-->
+	     <fieldset id="candidato"> <legend> Dados Pessoais: </legend>
+	      	
+	      	<p> <label for="cnome">Nome:</label> 
+	      		<input type="text" name="tnome" id="cnome" size="50" maxlength="100" placeholder="Nome completo" /> </p>
+	      	<p>Idade de Nascimento: <input type="date" name="tNasc" id="cNasc"/> </p>
+	      	
+	      <fieldset id="genero"> <legend> Gênero: </legend> 
+	      	<input type="radio" name="tgenero" id="cMasc"/> 
+	      	<label for="cMasc"> Masculino </label>
+	        <input type="radio" name="tgenero" id="cFem" /> 
+	        <label for="cFem"> Feminino </label>
+	     </fieldset>
+	      	
+	      	<p><legend>Estado Civil:</legend>
+			<select id="cestado civil">
+				<option value="A">Casado(a)</option>
+				<option value="B">Solteiro(a)</option>
+				<option value="C">Divorciado(a)</option>
+				<option value="D">Viuvo(a)</option>
+			</select></p>
+
+	      	<p> <label for="cNac" > Nacionalidade: </label>
+	      		<input type="text" name="tNac" id="cNac" size="20" maxlength="50" /></p>
+
+	      	<p> <label for="crg"> RG: </label>  
+	      		<input type="text" name="trg" id="crg" size="10" maxlength="12" placeholder="xx.xxx.xxx-x" /> </p>
+	      	<p> <label for="ccpf"> CPF: </label>
+	      		<input type="text" name="tcpf" id="ccpf" size="10" maxlength="14" placeholder="xxx.xxx.xxx-xx" /> </p>
+	     </fieldset>
+         
+         <!--endereço-->
+	     <fieldset id="endereço"> <legend> Endereço: </legend>
+	        
+	        <p> <label for="cpais"> Pais: </label>
+	        	<input type="text" name="tpais" id="cpais" size="20" maxlength="50" /> </p>
+	        <p> <label for="ccep"> CEP: </label>
+	        	<input type="text" name="tcep" id="ccep" size="10" maxlength="9" placeholder="xxxxx-xx" /> </p>
+	        <p> <label for="cestado"> Estado: </label>
+	        	<input type="text" name="testado" id="cestado" size="20" maxlength="50" /> </p>
+	        <p> <label for="ccidade"> Cidade: </label>
+	        	<input type="text" name="tcidade" id="ccidade"  size="20" maxlength="50" /> </p>
+	        <p> <label for="cbairro"> Bairro: </label> 
+	        	<input type="text" name="tbairro" id="cbairro" size="50" maxlength="100" /> </p>
+	        <p> <label for="crua"> Rua: </label>
+	        	<input type="text" name="trua" id="crua" size="50" maxlength="100" /> </p>
+	        <p> Número:
+	        	<input type="number" name="tnumero" id="numero" min="0" max="99999" /> </p>
+	        <p> <label for="ccomplemento"> Complemento: </label>
+	        	<input type="text" name="tcomplemento" id="ccomplemento" size="50" maxlength="100" /> </p>
+	     </fieldset>
+         
+         <!--contato-->
+	     <fieldset id="contato"> <legend> Contato: </legend>
+	        
+	        <p> <label for="ctelefone"> Telefone: </label>
+	        	<input type="text" name="ttelefone" id="ctelefone" size="10" maxlength="13" placeholder="(xx)xxxx-xxxx" /> </p>
+	        <p> <label for="ccelular"> Celular: </label> 
+	        	<input type="text" name="tcelular" id="ccelular" size="10" maxlength="14" placeholder="(xx)xxxxx-xxxx" /> </p>
+	        <p>e-mail: <input type="email" name="temail" id="cemail" size="50" maxlength="100" /> </p>
+	     </fieldset>
+         
+         
+
+	     <!--informaçoes_complementares-->
+	     <fieldset id="informaçoes_complementares"> <legend>Imformações complementares:</legend>
+	     	
+	     	<p>Idiomas:</p>
+
+	        <label for="ckingles">Inglês</label>
+			<input type="checkbox" id="ckingles">
+			
+			<label for="ckespanhol">Espanhol</label>
+			<input type="checkbox" id="ckespanhol">
+			
+			<label for="ckjapones">Japonês</label>
+			<input type="checkbox" id="japones">
+			
+			<label for="ckalemao">Alemâo</label>
+			<input type="checkbox" id="alemao">
+			
+			<label for="ckoutros">Outros</label>
+			<input type="checkbox" id="ckoutros">
+
+			<p> <label for="texperiencia">Experiência Profissional:</label>
+			<textarea id="texperiencia" required></textarea> </p>
+
+			<p> <label for="tobjetivo">Objetivo:</label>
+			<textarea id="tobjetiovo" required></textarea> </p>
+
+			</fieldset>
+
+            <!--registrar-->
+	     <fieldset id="registrar"> <legend> Registrar: </legend>
+	     	<p>Senha: <input type="password" name="tsenha" id="csenha" size="10" maxlength="10" placeholder="10 Caracteres" /> </p>
+	     	<p>Confirmar senha: <input type="password" name="tconfirmar" id="cconfirmar" size="10" maxlength="10" placeholder="10 Caracteres" /></p> 
+	     
+	     </fieldset>
+             
+           <p> <input type="submit" value=salvar></p> 
+	     	
+	     
+         </form>
+
+    </main>	
